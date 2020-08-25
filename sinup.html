@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>رازی بورس</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="theme-color" content="#4db2e8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,800italic,400,800,700,600' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="./css/fontawesome-free-5.13.1-web/css/all.css" rel="stylesheet"> <!--load all styles -->
+
+        <!-- boot -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+        <!-- waths app chat -->
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        
+    </head>
+<body>
+    <!-- head -->
+
+    <header class="header">
+            
+        <div class="container">
+            <nav id="nav" class="nav nav-fixed clearfix">
+                <a class="logo" href="index.html">Razi Bours</a>                    
+                <ul class="menu">
+                    <li class="active"><a href="index.html"><i class="hom-ico"></i>صفحه اصلی</a></li>
+                    <li><a href="sinup.html"><i class="portfolio-ico"></i>ثبت نام</a></li>
+                    <li><a href="login.html"><i class="contact-ico"></i> ورود</a></li>
+                    <!-- <li><a href="about.html"><i class="about-ico"></i>درباره ما</a></li> -->
+                    <!-- <li><a href="services.html"><i class="service-ico"></i>خدمات</a></li> -->
+                    <!-- <li><a href="portfolio.html"><i class="portfolio-ico"></i>نمونه کارها</a></li> -->
+                    <!-- <li><a href="kharid.html"><i class="posts-ico"></i>خرید بسته ها</a></li> -->
+                    <!-- <li><a href="contact.html"><i class="contact-ico"></i>تماس با ما</a></li> -->
+                </ul>
+                <div class="menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        
+    </header>        
+    
+   
+        <div id="formContent" class="mx-auto my-4">
+          <!-- Tabs Titles -->
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+            <img style="border-radius: 100px; margin: 20px 20px; width: 100px; border: 10px solid rgb(60, 86, 148); padding: 2px;" src="img/logo-b.jpeg" id="icon" alt="User Icon" />
+          </div>
+      
+          <!-- Login Form -->
+          <form id="sinup-form">
+              <div id="sinup-alert-s" class="d-none">
+                <p  class="alert alert-success   mx-2">لطفا صبر کنید ...
+                    <div id="sinup-spinner" class="spinner-grow text-info " role="status">
+                        <span class="sr-only">Loading...</span>
+                      </div>
+                  </p>
+              </div>
+             
+              <p  class="my-3">بسته ی مورد نظر خود را انتخاب کنید</p>
+              <div class="form-group">
+                <select id="sinup-select" style="border: 3px solid black; padding: 5px;" class="form-control form-control-lg  btn btn-info" >
+                    <option value="1">پشتیبانی سطح 1  -  399 هزار تومان</option>
+                    <option value="2">پشتیبانی ممتاز -  499 هزار تومان</option>
+                    <option value="3" disabled>بسته آموزشی سطح 1 - 190 هزار تومان</option>
+                    <option value="4" disabled>بسته آموزشی سطح 2 - 250 هزار تومان</option>
+                    <option value="5" disabled>بسته آموزشی سطح 3 - 290 هزار تومان</option>
+                    
+
+                  </select>
+                  <a href="./tarefe.html" class="my-4">درباره تعرفه ها</a>
+              </div>
+              
+
+             
+            <input type="submit" class="fadeIn fourth mt-4"  value="ثبت نام">
+          </form>
+      
+         
+      
+        </div>
+
+         <!-- waths app chat -->
+             
+          
+             <!-- GetButton.io widget -->
+
+             <script type="text/javascript">
+              (function () {
+                  var options = {
+                      whatsapp: "+989216382198", // WhatsApp number
+                      call_to_action: "پشتیبان انلاین", // Call to action
+                      position: "left", // Position may be 'right' or 'left'
+                  };
+                  var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+                  var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                  s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                  var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+              })();
+          </script>
+
+
+<!-- /GetButton.io widget -->
+         
+        <script src="./js/sinup.js"></script>
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/idangerous.swiper.min.js"></script>
+        <script src="js/magnific.js"></script>
+        <script src="js/main.js"></script>
+    
+</body>
+</html>

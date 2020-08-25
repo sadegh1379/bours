@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808" />
+
+    <title>login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./userlogin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+
+  </head>
+<body>
+
+    <div  id="mySidenav"  class="sidenav text-center">
+        <a style="text-decoration: none;" href="javascript:void(0)" class="closebtn text-danger" onclick="closeNav()">&times;</a>
+        <div class="text-center">
+            <img style="width: 60px; border-radius: 30px; border: 5px solid gold; padding: 10px;" src="../img/logo-b.jpeg" alt="رازی بورس">
+           
+            
+        </div>
+        
+        
+        <ul class="list-group mt-4">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="fa fa-user"></span>
+            
+            <span  id="profile_name" class="badge badge-warning badge-pill p-2"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="fa fa-phone"></span>
+            
+            <span id="profile_phone" class="badge badge-warning badge-pill p-2"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+           امتیاز 
+            <span id="profile_level" class="badge badge-warning badge-pill p-2"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            تاریخ ثبت نام
+            <span id="profile_start_date" class="badge badge-warning badge-pill p-2"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            تاریخ  اتمام بسته 
+            <span id="profile_end_date" class="badge badge-warning badge-pill p-2"></span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- bootstrap nav -->
+      <nav class="navbar navbar-expand-xs navbar-dark bg-dark" dir="rtl">
+        <a class="navbar-brand" href="#"><img src="../img/logo-b.jpeg" style="width: 40px; border-radius: 30px;"  alt=""></a>
+             
+       <!-- open modal btn -->
+        <button type="button" data-target="#exampleModal" data-toggle="modal"  class="btn btn-warning ">
+          پیام ها <span class="badge badge-dark text-light">0</span>
+          <span class="sr-only">unread messages</span>
+        </button>
+       
+        <button onclick="openNav()" class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon " ></span>
+        </button>
+        
+        
+      </nav>
+  
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <div id="main" class="text-center">
+        <ul class="list-group mb-1" >
+          <li style="background-color: rgb(228, 195, 12) !important;"  class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="badge badge-dark badge-pill p-2" id="show-date"></span>
+            <span class="badge badge-dark badge-pill p-2" id="show-day" ></span>
+            <span class="badge badge-dark badge-pill p-2" id="show-time"></span>
+          </li>
+        </ul>
+        
+
+        
+        <!-- body page -->
+          <div id="accordion">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    VIP  سیگنال های 
+                    <span class="fa fa-bar-chart text-warning"></span>
+                  </button>
+                </h5>
+              </div>
+          
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    روان شناسی بازار
+                    <span class="fa fa-users text-warning"></span>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ارتباط با مشاور 
+                    <span class="fa fa-handshake-o text-warning"></span>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  <a href="https://api.whatsapp.com/send?phone=989216382198&text=%D8%B3%D9%84%D8%A7%D9%85">
+                    <img style="width: 100px; border-radius: 30px;" src="https://b1.pngbarn.com/png/206/637/flat-gradient-social-media-icons-whatsapp-whatsapp-icon-art-png-clip-art.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <button id="exit" class="bg-dark text-light">
+            خروج
+         </button>
+
+
+
+         <!-- modal open -->
+         <!-- Button trigger modal -->
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">پیام های شما</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body ">
+                          <p>شما هنوز هیچ پیامی ندارید</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-dismiss="modal">بستن</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      </div>
+
+      <script src="../js/login.js"></script>
+      <script src="./userlogin.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+</body>
+</html>
