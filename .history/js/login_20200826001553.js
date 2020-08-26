@@ -73,7 +73,7 @@ function submit(e){
     } , 3000)
 
 
-   
+    document.getElementById("show-user-name").innerText = userName.value;
     
     // console,log(text);
 }
