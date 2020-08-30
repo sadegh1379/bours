@@ -27,6 +27,18 @@ const local_users = [
         pass : '2671',
         type:'vip-m',
         level : '100'
+    },{
+        name : 'azita77',
+        first_name : ' آزیتا ',
+        last_name : 'خسروی',
+        mobile : '09012409501',
+        start_date : '1399/06/05',
+        end_date : '1400/07/05',
+        start_time : '18:01:26',
+        pay_money : '499000 T',
+        pass : '8080',
+        type:'vip-m',
+        level : '5000'
     }
 ]
 
